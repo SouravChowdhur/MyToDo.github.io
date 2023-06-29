@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    background-color: white;
+    width: 700px;
+    min-height: 500px;
+    border-radius: 5px;
+    padding: 15px;
+}
+#item{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 2px grey;
+    font-weight: bold;
+    /*display: block;*/
+}
+#to-do-box{
+    margin-top: 20px;
+    list-style: none;
+}
+#to-do-box li{
+   position: relative;/*For telling that icon ko right se 10 px set karna hai with respect to immediate parent that is a li*/
+   background-color: #34495e;
+   color: white;
+   padding: 10px;
+   border-radius: 2px;
+   padding-right: 30px;
+   margin-top: 10px;
+   text-align: justify; /*It should be a block-level element for applying this property*/
+   /*By default, the <li> (list item) element in HTML is a block-level element. Block-level elements start on a new line and occupy the full available width of their parent container.*/
+   user-select: none;
+}
+#to-do-box li i{
+    position: absolute;/*For applying right se 10px*/
+    right: 10px;
+    top: 10px;
+}
+.done{
+    color: black;
+    background-color: #7f8c8d !important;
+    text-decoration: none;
+    text-decoration: line-through;
+}
